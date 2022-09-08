@@ -7,7 +7,7 @@ import java.util.HashMap;
  */
 
 @SuppressWarnings("all")
-class Solution {
+public class Solution {
     public String minWindow(String s, String t) {
         System.out.println("-----------");
         if(s.length() < t.length() || t=="") {
@@ -37,22 +37,15 @@ class Solution {
             if(number_t > 0){
                 right ++;
             }
-
-
             //
             if(number_t == 0){
                 // left 右移
 
-
-
-
                 System.out.println("较短"+left +"\t" +  right);
                 minLen = minLen < (right - left)? minLen : right-left;
                 start = minLen < (right - left)? start:left;
-
                 // 含有 -> 右移
                 //右移
-
 
             }
         }

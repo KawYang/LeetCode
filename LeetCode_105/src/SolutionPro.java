@@ -7,7 +7,7 @@
  */
 
 @SuppressWarnings("all")
-class SolutionPro {
+public class SolutionPro {
     public static void main(String[] args) {
         SolutionPro solution = new SolutionPro();
         int [] preorder = new int[]{3,9,20,15,7};

@@ -4,7 +4,7 @@ import java.util.HashMap;
  * @author LiYang
  */
 @SuppressWarnings("all")
-class Solution3 {
+public class Solution3 {
     public String minWindow(String s, String t) {
         //窗口左右
         int left = 0,right;

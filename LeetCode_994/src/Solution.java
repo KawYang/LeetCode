@@ -17,17 +17,7 @@ import java.util.Queue;
         遍历一遍 将 起始变质的存入队列，一次出队 传染
         传染的橘子 入新的队列  ，方便二次传染。
  */
-public class Solution1 {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-//        int [][] a = {{2,1,1},{0,1,0},{1,0,1}};
-        int [][] a = {{0}};
-
-
-        System.out.println("次数："+solution.orangesRotting(a));
-    }
-}
-
+public class Solution {
 
 /**
  *  定义一个初始队列
@@ -40,8 +30,6 @@ public class Solution1 {
  *  一个新鲜 一个不新鲜 返回 1
  *  没有橘子 返回 0
  */
-
-class Solution {
     public int orangesRotting(int[][] grid) {
         Queue<Point> queue = findNotGood(grid);
         int time = 0;
@@ -117,5 +105,14 @@ class Solution {
         }
 
         return b;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+//        int [][] a = {{2,1,1},{0,1,0},{1,0,1}};
+        int [][] a = {{0}};
+
+
+        System.out.println("次数："+solution.orangesRotting(a));
     }
 }

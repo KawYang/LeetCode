@@ -7,7 +7,7 @@ import java.util.HashMap;
  * Created by MacBook Air on 2020/05/24.
  * Copyright © 2020 LiYang. All rights reserved.
  */
-class Solution2 {
+public class Solution2 {
     public String minWindow(String s, String t) {
         //窗口左右
         int left = 0,right;

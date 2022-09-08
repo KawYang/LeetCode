@@ -15,7 +15,7 @@
  * 链接：https://leetcode-cn.com/problems/minimum-window-substring
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
-class Solution1 {
+public class Solution1 {
     public String minWindow(String s, String t) {
         if(s.length() < t.length()) {return "";}
         int number = t.length();

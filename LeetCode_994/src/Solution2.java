@@ -24,7 +24,7 @@
             否则 返回  时间数
 
  */
-public class SolutionDemo {
+public class Solution2 {
     public static int orangesRotting(int[][] grid) {
         int number = findNumber(grid);
         int time = 0;
@@ -98,8 +98,6 @@ public class SolutionDemo {
     }
     public static void main(String[] args) {
         int [][] a = {{2,1,1},{1,1,0},{0,1,1}};
-
-
 
 
         System.out.println(orangesRotting(a));
